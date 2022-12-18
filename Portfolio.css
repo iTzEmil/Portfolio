@@ -1,0 +1,271 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Expletus Sans';
+}
+
+.navbox{
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 3px solid yellow;
+  border-radius: 5px;
+  margin-right: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbox:hover{
+  cursor: pointer;
+}
+
+#menubutton{
+  width: 30px;
+  height: 30px;
+  transition-property: display;
+  transition-duration: 0.5s;
+}
+
+#xbutton{
+  display: none;
+  width: 30px;
+  height: 30px;
+  transition-property: display;
+  transition-duration: 0.5s;
+
+}
+
+.mobilecontainer{
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  margin-top: 150px;
+  transition-property: visibility;
+  transition-duration: 0.3s;
+}
+
+.mobilemenu{
+  display: flex;
+  position: absolute;
+  height: 300px;
+  width: 50%;
+  background-color: #2b2b2b;
+  border: 2px solid yellow;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobilenavbuttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 45px;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+}
+
+.mobilenavbutton{
+  color: yellow;
+}
+
+.mobilenavbutton:hover{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+p {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+#navbuttons {
+  list-style-type: none;
+  display: flex;
+  margin-right: 50px;
+}
+
+.navbutton {
+  color: inherit;
+}
+
+
+.logo{
+  margin-left: 50px;
+  padding: 5px 10px 10px 10px;
+  border-radius: 4px;
+  cursor: default;
+}
+
+.navbutton {
+  margin-left: 20px;
+  color: yellow;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+
+nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.navbutton:hover{
+  cursor: pointer;
+  color: black;
+  background-color: yellow;
+}
+
+
+nav h2{
+  color: yellow;
+  transition-property: text-shadow;
+  transition-duration: .5s;
+}
+
+nav h2:hover{
+  text-shadow: 0 0 7px rgb(156, 247, 64), 0 0 10px rgb(133, 250, 82), 0 0 15px rgb(149, 252, 104);
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to left top, #121314, #1a1d1d, #222625, #2c302d, #393934);
+}
+
+.aboutmecontainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.foto{
+  width: 300px;
+  height: 300px;
+  margin: 70px;
+  border: solid white 3px;
+  box-shadow: 5px 5px lightgray;
+  transition-property: box-shadow;
+  transition-duration: 1s;
+}
+
+.foto:hover{
+  box-shadow: none;
+}
+
+#heading{
+  margin: 50px 40px;
+  font-size: 35px;
+}
+
+.aboutmecontainer .projectscontainer .contactcontainer{
+  margin: 20px;
+}
+
+.projectslist{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.project1 p{
+  padding: 0;
+  margin: 0;
+}
+
+.project1{
+  height: 300px;
+  width: 300px;
+  border: white solid 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 5px lightgray;
+  transition-property: background-color, box-shadow;
+  transition-duration: .5s;
+}
+
+.project1:hover{
+  background-color: white;
+  box-shadow: none;
+  color: black;
+}
+
+#project1{
+  width: 300px;
+  padding-top: 127px;
+  padding-bottom: 127px;
+  transition-duration: 0.5s;
+}
+
+#project1:hover{
+  color: black;
+}
+
+.contactcontainer{
+  margin: 20px;
+  padding-top: 50px;
+}
+
+.linkedin{
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+}
+
+.linkedincontainer{
+  display: flex;
+  align-items: center;
+}
+
+.linkedincontainer a{
+  margin-left: 30px;
+  height: 100%;
+  text-decoration: underline;
+  transition-duration: .5s;
+}
+
+.linkedincontainer a:hover{
+  text-decoration: none;
+  color: yellow;
+}
+
+footer{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+h3{
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 687px){
+  #navbuttons{
+    display: none;
+  }
+
+  .navbox{
+    display: flex;
+  }
+}
